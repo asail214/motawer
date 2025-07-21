@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card, Button, Alert, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+
 
 function NextSteps() {
   const advancedTopics = [

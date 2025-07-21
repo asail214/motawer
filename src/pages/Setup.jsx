@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Button, Alert, Tabs, Tab, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
 function Setup() {
   const [activeTab, setActiveTab] = useState("requirements");
