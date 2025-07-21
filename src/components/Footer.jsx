@@ -1,7 +1,11 @@
-export default function Footer() {
+import React from "react";
+
+function Footer() {
   return (
-    <footer className="bg-darkBg text-center text-gray-400 py-6 mt-10">
-      <p>© {new Date().getFullYear()} مطور. جميع الحقوق محفوظة.</p>
+    <footer className="bg-dark text-light text-center p-3 mt-5">
+      <p>© {new Date().getFullYear()} منصة مطور - جميع الحقوق محفوظة</p>
     </footer>
   );
 }
+
+export default Footer;

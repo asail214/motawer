@@ -1,8 +1,5 @@
-/* Tailwind CSS imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
-  direction: rtl; /* RTL support */
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
 }
