@@ -1,0 +1,246 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #0d1117;
+  color: #f0f6fc;
+  line-height: 1.6;
+}
+
+/* React Blue Theme Colors */
+:root {
+  --primary-blue: #61DAFB;
+  --dark-bg: #0d1117;
+  --dark-surface: #161b22;
+  --dark-border: #30363d;
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+}
+
+/* Custom Navbar Styles */
+.navbar-custom {
+  background-color: var(--dark-surface) !important;
+  border-bottom: 1px solid var(--dark-border);
+  padding: 1rem 0;
+}
+
+.nav-link-custom {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.nav-link-custom:hover {
+  color: var(--primary-blue) !important;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: #000;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4fa8c5;
+  border-color: #4fa8c5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(97, 218, 251, 0.3);
+}
+
+/* Card Styles */
+.card-custom {
+  background-color: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(97, 218, 251, 0.15);
+}
+
+/* Learning Path Cards */
+.learning-card {
+  background: linear-gradient(135deg, var(--dark-surface) 0%, #1c2128 100%);
+  border: 1px solid var(--dark-border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.learning-card:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 0 8px 32px rgba(97, 218, 251, 0.2);
+}
+
+/* Code Block Styles */
+.code-block {
+  background-color: #1c2128;
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  color: #e6edf3;
+}
+
+/* Syntax highlighting */
+.code-keyword {
+  color: #ff7b72;
+}
+
+.code-string {
+  color: #a5d6ff;
+}
+
+.code-comment {
+  color: #8b949e;
+  font-style: italic;
+}
+
+/* Alert Styles */
+.alert-info {
+  background-color: rgba(97, 218, 251, 0.1);
+  border: 1px solid rgba(97, 218, 251, 0.3);
+  color: var(--primary-blue);
+  border-radius: 8px;
+}
+
+.alert-warning {
+  background-color: rgba(255, 177, 102, 0.1);
+  border: 1px solid rgba(255, 177, 102, 0.3);
+  color: #ffb166;
+  border-radius: 8px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #4fa8c5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+/* Learning Steps */
+.step-number {
+  background-color: var(--primary-blue);
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Progress Bar */
+.progress-custom {
+  background-color: var(--dark-surface);
+  border-radius: 10px;
+  height: 8px;
+}
+
+.progress-bar-custom {
+  background-color: var(--primary-blue);
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer-custom {
+  background-color: var(--dark-surface);
+  border-top: 1px solid var(--dark-border);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .learning-card {
+    padding: 1.5rem;
+  }
+  
+  .navbar-custom {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--primary-blue);
+  color: #000;
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4fa8c5;
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.nav-link:focus {
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
