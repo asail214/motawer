@@ -25,6 +25,8 @@ function Contact() {
   };
 
   return (
+    <>
+  
     <Container className="my-5 fade-in">
       <Row>
         <Col>
@@ -260,7 +262,9 @@ function Contact() {
         </Col>
       </Row>
     </Container>
+      </>
   );
+  
 }
 
 export default Contact;

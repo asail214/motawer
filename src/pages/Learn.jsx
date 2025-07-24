@@ -75,6 +75,7 @@ function Learn() {
   };
 
   return (
+    <>
     <Container className="my-5 fade-in">
       <Row>
         <Col>
@@ -197,6 +198,7 @@ function Learn() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

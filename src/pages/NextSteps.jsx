@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Button, Alert, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
 
 
 function NextSteps() {
@@ -112,6 +111,7 @@ function NextSteps() {
   };
 
   return (
+    <>
     <Container className="my-5 fade-in">
       <Row>
         <Col>
@@ -425,6 +425,7 @@ function NextSteps() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

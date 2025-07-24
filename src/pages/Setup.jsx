@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Button, Alert, Tabs, Tab, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
 
 function Setup() {
   const [activeTab, setActiveTab] = useState("requirements");
@@ -15,6 +14,7 @@ function Setup() {
   ];
 
   return (
+    <>
     <Container className="my-5 fade-in">
       <Row>
         <Col>
@@ -107,30 +107,6 @@ npm --version`}</pre>
                       </Button>
                     </Card.Body>
                   </Card>
-
-                  {/* Git Section */}
-                  <Card className="card-custom">
-                    <Card.Body>
-                      <div className="d-flex align-items-center mb-3">
-                        <div style={{fontSize: '2rem', marginLeft: '1rem'}}>📁</div>
-                        <div>
-                          <h5 className="mb-1" style={{color: '#61DAFB'}}>Git</h5>
-                          <Badge bg="secondary">اختياري</Badge>
-                        </div>
-                      </div>
-                      <p className="text-secondary mb-3">
-                        نظام إدارة الإصدارات. مفيد لحفظ المشاريع ومشاركتها.
-                      </p>
-                      <Button 
-                        variant="outline-secondary" 
-                        href="https://git-scm.com/downloads" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        تحميل Git 📥
-                      </Button>
-                    </Card.Body>
-                  </Card>
                 </div>
               </Tab>
 
@@ -159,37 +135,6 @@ npm --version`}</pre>
                       </div>
                     </Card.Body>
                   </Card>
-
-                  {/* macOS */}
-                  <Card className="card-custom mb-4">
-                    <Card.Body>
-                      <h5 className="mb-3">🍎 macOS</h5>
-                      <ol>
-                        <li className="mb-2">
-                          اذهب إلى <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">nodejs.org</a>
-                        </li>
-                        <li className="mb-2">حمل الإصدار LTS</li>
-                        <li className="mb-2">شغّل ملف .pkg واتبع التعليمات</li>
-                        <li className="mb-2">افتح Terminal وتأكد من التثبيت:</li>
-                      </ol>
-                      <div className="code-block">
-                        <pre>{`node --version
-npm --version`}</pre>
-                      </div>
-                      <Alert variant="info" className="mt-3">
-                        💡 يمكنك أيضاً استخدام Homebrew: <code>brew install node</code>
-                      </Alert>
-                    </Card.Body>
-                  </Card>
-
-                  {/* Verification */}
-                  <Alert variant="success">
-                    <h6 className="mb-2">✅ كيف أعرف أن التثبيت نجح؟</h6>
-                    <p className="mb-0">
-                      يجب أن تحصل على أرقام الإصدارات عند تشغيل الأوامر أعلاه. 
-                      مثال: Node v20.10.0 و npm 10.2.3
-                    </p>
-                  </Alert>
                 </div>
               </Tab>
 
@@ -199,33 +144,10 @@ npm --version`}</pre>
                     إنشاء أول مشروع React ⚛️
                   </h4>
 
-                  {/* Method 1: Create React App */}
-                  <Card className="card-custom mb-4">
-                    <Card.Body>
-                      <h5 className="mb-3">🛠️ الطريقة الأولى: Create React App</h5>
-                      <p className="text-secondary mb-3">
-                        الطريقة التقليدية والأسهل للمبتدئين
-                      </p>
-                      <div className="code-block">
-                        <pre>{`# إنشاء مشروع جديد
-npx create-react-app my-first-react-app
-
-# الدخول لمجلد المشروع
-cd my-first-react-app
-
-# تشغيل الخادم المحلي
-npm start`}</pre>
-                      </div>
-                      <Alert variant="info" className="mt-3">
-                        💡 سيفتح المتصفح تلقائياً على http://localhost:3000
-                      </Alert>
-                    </Card.Body>
-                  </Card>
-
                   {/* Method 2: Vite */}
                   <Card className="card-custom mb-4">
                     <Card.Body>
-                      <h5 className="mb-3">⚡ الطريقة الثانية: Vite (مُوصى بها)</h5>
+                      <h5 className="mb-3">⚡ الطريقة المُوصى بها: Vite</h5>
                       <p className="text-secondary mb-3">
                         أسرع وأكثر حداثة - هي التي استخدمتها في هذا المشروع!
                       </p>
@@ -245,94 +167,6 @@ npm run dev`}</pre>
                       <Badge bg="success" className="mt-2">
                         أسرع في البناء والتحميل!
                       </Badge>
-                    </Card.Body>
-                  </Card>
-
-                  {/* Project Structure */}
-                  <Card className="card-custom">
-                    <Card.Body>
-                      <h5 className="mb-3">📁 هيكل المشروع</h5>
-                      <div className="code-block">
-                        <pre>{`my-react-app/
-├── public/          # الملفات العامة
-├── src/            # كود المشروع الرئيسي
-│   ├── App.jsx     # المكون الرئيسي
-│   ├── main.jsx    # نقطة البداية
-│   └── index.css   # الأنماط الرئيسية
-├── package.json    # إعدادات المشروع
-└── vite.config.js  # إعدادات Vite`}</pre>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </Tab>
-
-              <Tab eventKey="vscode-setup" title="إعداد VS Code">
-                <div className="mt-4">
-                  <h4 className="mb-4" style={{color: '#61DAFB'}}>
-                    تحسين VS Code لتطوير React 💻
-                  </h4>
-
-                  {/* Extensions */}
-                  <Card className="card-custom mb-4">
-                    <Card.Body>
-                      <h5 className="mb-3">🧩 الإضافات المهمة</h5>
-                      <Row>
-                        {vscodeExtensions.map((ext, index) => (
-                          <Col md={6} className="mb-3" key={index}>
-                            <div className="p-3 border rounded">
-                              <h6 className="mb-1" style={{color: '#61DAFB'}}>
-                                {ext.name}
-                              </h6>
-                              <p className="text-secondary small mb-0">
-                                {ext.description}
-                              </p>
-                            </div>
-                          </Col>
-                        ))}
-                      </Row>
-                      <Alert variant="info" className="mt-3">
-                        💡 <strong>كيفية التثبيت:</strong> اذهب لـ Extensions في VS Code وابحث عن اسم الإضافة
-                      </Alert>
-                    </Card.Body>
-                  </Card>
-
-                  {/* Settings */}
-                  <Card className="card-custom mb-4">
-                    <Card.Body>
-                      <h5 className="mb-3">⚙️ إعدادات مفيدة</h5>
-                      <p className="text-secondary mb-3">
-                        اذهب لـ File → Preferences → Settings وفعّل هذه الخيارات:
-                      </p>
-                      <ul>
-                        <li><code>Auto Save</code> - حفظ تلقائي</li>
-                        <li><code>Format On Save</code> - تنسيق عند الحفظ</li>
-                        <li><code>Word Wrap</code> - التفاف النص</li>
-                        <li><code>Emmet</code> - اختصارات HTML/CSS</li>
-                      </ul>
-                    </Card.Body>
-                  </Card>
-
-                  {/* Shortcuts */}
-                  <Card className="card-custom">
-                    <Card.Body>
-                      <h5 className="mb-3">⌨️ اختصارات مفيدة</h5>
-                      <Row>
-                        <Col md={6}>
-                          <ul>
-                            <li><kbd>Ctrl+`</kbd> - فتح Terminal</li>
-                            <li><kbd>Ctrl+Shift+P</kbd> - Command Palette</li>
-                            <li><kbd>Ctrl+D</kbd> - تحديد متعدد</li>
-                          </ul>
-                        </Col>
-                        <Col md={6}>
-                          <ul>
-                            <li><kbd>Alt+↑/↓</kbd> - نقل السطر</li>
-                            <li><kbd>Ctrl+/</kbd> - تعليق/إلغاء تعليق</li>
-                            <li><kbd>F2</kbd> - إعادة تسمية</li>
-                          </ul>
-                        </Col>
-                      </Row>
                     </Card.Body>
                   </Card>
                 </div>
@@ -369,6 +203,7 @@ npm run dev`}</pre>
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

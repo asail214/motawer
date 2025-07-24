@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Button, Alert, Tabs, Tab, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
 
 
 function TodoProject() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
+    <>
     <Container className="my-5 fade-in">
       <Row>
         <Col>
@@ -742,6 +742,7 @@ import { FaPlus, FaTrash, FaCheck } from 'react-icons/fa';
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

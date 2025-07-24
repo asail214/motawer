@@ -11,42 +11,6 @@ import Concepts from "./pages/Concepts";
 import TodoProject from "./pages/TodoProject";
 import NextSteps from "./pages/NextSteps";
 
-// Create placeholder components for missing pages
-const ReactIntro = () => (
-  <div className="container mt-5">
-    <h1>مقدمة React - قريباً</h1>
-    <p>هذه الصفحة قيد التطوير</p>
-  </div>
-);
-
-const Setup = () => (
-  <div className="container mt-5">
-    <h1>إعداد البيئة - قريباً</h1>
-    <p>هذه الصفحة قيد التطوير</p>
-  </div>
-);
-
-const Concepts = () => (
-  <div className="container mt-5">
-    <h1>المفاهيم الأساسية - قريباً</h1>
-    <p>هذه الصفحة قيد التطوير</p>
-  </div>
-);
-
-const TodoProject = () => (
-  <div className="container mt-5">
-    <h1>مشروع Todo - قريباً</h1>
-    <p>هذه الصفحة قيد التطوير</p>
-  </div>
-);
-
-const NextSteps = () => (
-  <div className="container mt-5">
-    <h1>الخطوات التالية - قريباً</h1>
-    <p>هذه الصفحة قيد التطوير</p>
-  </div>
-);
-
 function App() {
   return (
     <MainLayout>

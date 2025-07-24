@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 
 function FrontendBasics() {
   return (
+    <>
     <Container className="my-5" dir="rtl">
       <h1 className="text-primary fw-bold mb-4">أساسيات تطوير الواجهات الأمامية</h1>
       
@@ -28,6 +29,7 @@ function FrontendBasics() {
         سيتم في الصفحات التالية التعمق في React خطوة بخطوة ✨
       </div>
     </Container>
+    </>
   );
 }
 

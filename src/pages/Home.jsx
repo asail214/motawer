@@ -43,6 +43,7 @@ function Home() {
   ];
 
   return (
+    <>
     <div className="fade-in">
       {/* Hero Section */}
       <section className="hero-section">
@@ -141,6 +142,7 @@ function Home() {
         </Row>
       </Container>
     </div>
+    </>
   );
 }
 
